@@ -12,17 +12,27 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import android.Manifest
+import android.speech.tts.TextToSpeech
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
+import kotlin.collections.ArrayList
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var speechRecognizer: SpeechRecognizer
     private lateinit var recognitionListener: RecognitionListener
+    private var tts: TextToSpeech? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         requestPermission()
+
+        tts = TextToSpeech(this,this)
+
+        btn_ent.setOnClickListener{startTTS()}
+
 
         var intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
         intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, packageName)
@@ -37,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //STT
     private fun requestPermission() {
         if(Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission(this,Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
@@ -113,4 +124,39 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    private fun initTextToSpeech() {
+        if(Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP){
+            Toast.makeText(this,"SDK VERSION IS LOW ",Toast.LENGTH_SHORT).show()
+            return
+        }
+    }
+
+    //TTS
+    private fun startTTS() {
+
+        tts!!.speak(edt_speech.text.toString(), TextToSpeech.QUEUE_FLUSH,null,"")
+    }
+
+    override fun onInit(status: Int) {
+        if(status == TextToSpeech.SUCCESS){
+            val result = tts!!.setLanguage(Locale.KOREA)
+
+            if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
+
+            }else{
+
+            }
+        }
+    }
+
+    override fun onDestroy() {
+
+        if(tts != null){
+            tts!!.stop()
+            tts!!.shutdown()
+        }
+        super.onDestroy()
+    }
+
 }
