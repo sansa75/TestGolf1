@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.231">
 
+        //음성인식을 텍스트로 변환 후 보여주는 부분
         <TextView
             android:id="@+id/tvResult"
             android:layout_width="wrap_content"
@@ -27,6 +28,7 @@
             android:text="This is TextView Result"
             android:textSize="26dp" />
 
+        //버튼을 누르면 음성인식 시작
         <Button
             android:id="@+id/btnStart"
             android:layout_width="match_parent"
@@ -46,12 +48,14 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        //음성 변환 할 텍스트 입력
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edt_speech"
             android:hint="텍스트를 입력하세요."/>
 
+        //버튼을 누르면 텍스트를 음성으로 변환
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

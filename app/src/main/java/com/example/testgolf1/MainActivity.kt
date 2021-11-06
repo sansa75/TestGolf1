@@ -19,27 +19,31 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
+    //STT 변수
     private lateinit var speechRecognizer: SpeechRecognizer
     private lateinit var recognitionListener: RecognitionListener
+
+    //TTS 변수
     private var tts: TextToSpeech? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        requestPermission()
+        requestPermission() //폰 마이크 권한 허용
 
+        //TTS 호출
         tts = TextToSpeech(this,this)
-
         btn_ent.setOnClickListener{startTTS()}
 
-
+        //STT 변수 설정
         var intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
         intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, packageName)
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE,"ko-KR")
 
-        setListener()
+        setListener() //STT 호출
 
+        //버튼 누르면 STT 시작
         btnStart.setOnClickListener {
             speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this)
             speechRecognizer.setRecognitionListener(recognitionListener)
