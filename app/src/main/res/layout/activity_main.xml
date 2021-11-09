@@ -39,7 +39,9 @@
     </LinearLayout>
 
     //TTS
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -49,19 +51,21 @@
         app:layout_constraintTop_toTopOf="parent">
 
         //음성 변환 할 텍스트 입력
+
         <EditText
+            android:id="@+id/edt_speech"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/edt_speech"
-            android:hint="텍스트를 입력하세요."/>
+            android:hint="텍스트를 입력하세요." />
 
         //버튼을 누르면 텍스트를 음성으로 변환
+
         <Button
+            android:id="@+id/btn_ent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_ent"
-            android:text="Speak"
-            />
+            android:text="Speak" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
