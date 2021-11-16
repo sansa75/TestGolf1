@@ -11,7 +11,7 @@
         android:id="@+id/background"
         android:layout_width="413dp"
         android:layout_height="736dp"
-        android:background="#FFC107"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,11 +28,13 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="236dp"
-                android:layout_height="247dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/pic_tab_upper" />
+                app:srcCompat="@drawable/mainicon" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
