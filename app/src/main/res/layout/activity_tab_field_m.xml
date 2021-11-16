@@ -46,11 +46,11 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="204dp"
-                android:layout_height="32dp"
+                android:layout_width="207dp"
+                android:layout_height="88dp"
                 android:layout_marginStart="200dp"
-                android:layout_marginTop="50dp"
-                android:text="리듬? 템포?"
+                android:layout_marginTop="40dp"
+                android:text="목소리로 기록되는 필드 스토리, 라운딩 복기가 자동으로! ?"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +78,7 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/button_m_tab3"
-            android:text="리듬"
+            android:text="코스"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -111,7 +111,7 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/button_m_tab3"
-            android:text="유레카"
+            android:text="라운딩 기록"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -127,9 +127,8 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="0dp"
             app:layout_constraintStart_toEndOf="@+id/button_yureka"
-            app:layout_constraintTop_toTopOf="@+id/button_yureka" />40dp""
-        app:layout_constraintStart_toEndOf="@+id/button_rounding"
-        tools:layout_editor_absoluteY="10dp" />
+            app:layout_constraintTop_toTopOf="@+id/button_yureka" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

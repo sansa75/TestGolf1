@@ -12,6 +12,7 @@
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.465625" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/drawable/side_nav_bar.xml" value="0.465625" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_login.xml" value="0.37726449275362317" />
+        <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_login_m.xml" value="0.34375" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_m_tab_community.xml" value="0.3151041666666667" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_m_tab_field.xml" value="0.3151041666666667" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_m_tab_home.xml" value="0.3026041666666667" />
@@ -20,6 +21,9 @@
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_main.xml" value="0.373542600896861" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_main2.xml" value="0.37726449275362317" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_main_tab1.Practice.xml" value="0.33" />
+        <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_start_approch_m.xml" value="0.3338541666666667" />
+        <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_start_login_m.xml" value="0.34057971014492755" />
+        <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_commu_m.xml" value="0.34375" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_community_m.xml" value="0.29791666666666666" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_field_m.xml" value="0.33" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_home_m.xml" value="0.29791666666666666" />
@@ -27,7 +31,7 @@
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_home_sub.xml" value="0.3151041666666667" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_my_m.xml" value="0.29791666666666666" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_practice_m.xml" value="0.33" />
-        <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_practice_s_rhythm.xml" value="0.5" />
+        <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/activity_tab_practice_s_rhythm.xml" value="0.9" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/content_main.xml" value="0.37726449275362317" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/fragment_dashboard.xml" value="0.3026041666666667" />
         <entry key="..\:/Users/D021053/AndroidStudioProjects/TestGolf1/app/src/main/res/layout/fragment_gallery.xml" value="0.37726449275362317" />

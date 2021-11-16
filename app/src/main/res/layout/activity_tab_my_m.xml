@@ -46,13 +46,15 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="204dp"
-                android:layout_height="32dp"
+                android:layout_width="220dp"
+                android:layout_height="57dp"
                 android:layout_marginStart="200dp"
-                android:layout_marginTop="50dp"
-                android:text="리듬? 템포?"
-                android:textSize="20sp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="10dp"
+                android:text="나만의 개성넘치는 골프 캐릭터와 디테일한 성장앨범을을 만들어 !! "
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,13 +74,13 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/button_rhythm"
+            android:id="@+id/button_character"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/button_m_tab3"
-            android:text="리듬"
+            android:text="캐릭터"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -86,12 +88,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
-            android:id="@+id/view_rhythm"
+            android:id="@+id/view_character"
             android:layout_width="200dp"
             android:layout_height="120dp"
             android:layout_marginStart="40dp"
-            app:layout_constraintStart_toEndOf="@+id/button_rhythm"
-            app:layout_constraintTop_toTopOf="@+id/button_rhythm" />
+            app:layout_constraintStart_toEndOf="@+id/button_character"
+            app:layout_constraintTop_toTopOf="@+id/button_character" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -105,13 +107,13 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <Button
-            android:id="@+id/button_yureka"
+            android:id="@+id/button_grown"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/button_m_tab3"
-            android:text="유레카"
+            android:text="성장  앨범"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -119,15 +121,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
-            android:id="@+id/view_yureka"
+            android:id="@+id/view_grown"
             android:layout_width="200dp"
             android:layout_height="120dp"
 
 
             android:layout_marginStart="40dp"
             android:layout_marginTop="0dp"
-            app:layout_constraintStart_toEndOf="@+id/button_yureka"
-            app:layout_constraintTop_toTopOf="@+id/button_yureka" />40dp""
+            app:layout_constraintStart_toEndOf="@+id/button_grown"
+            app:layout_constraintTop_toTopOf="@+id/button_grown" />40dp""
         app:layout_constraintStart_toEndOf="@+id/button_rounding"
         tools:layout_editor_absoluteY="10dp" />
 
@@ -140,13 +142,13 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
         <Button
-            android:id="@+id/button_rounding6"
+            android:id="@+id/button_setup"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:background="@drawable/button_m_tab3"
-            android:text="-"
+            android:text="설정"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -154,14 +156,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
-            android:id="@+id/view_rounding6"
+            android:id="@+id/view_setup"
             android:layout_width="200dp"
             android:layout_height="120dp"
 
 
             android:layout_marginStart="40dp"
-            app:layout_constraintStart_toEndOf="@+id/button_rounding6"
-            app:layout_constraintTop_toTopOf="@+id/button_rounding6" />
+            app:layout_constraintStart_toEndOf="@+id/button_setup"
+            app:layout_constraintTop_toTopOf="@+id/button_setup" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
