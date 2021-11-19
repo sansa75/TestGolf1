@@ -14,7 +14,7 @@
         android:background="@color/white"
 
         app:itemTextColor="@drawable/nav_text_color"
-        app:itemTextTint="@drawable/nav_text_color"
+
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

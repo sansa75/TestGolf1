@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         requestPermission() //폰 마이크 권한 허용
 
         //TTS 호출
@@ -48,6 +49,11 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this)
             speechRecognizer.setRecognitionListener(recognitionListener)
             speechRecognizer.startListening(intent)
+        }
+
+        //강민석 . 로그인 버튼 클릭 리스너 -> 로그인 화면 전환
+        myInfoButton.setOnClickListener {
+            setContentView(R.layout.activity_start_login_m)
         }
     }
 
