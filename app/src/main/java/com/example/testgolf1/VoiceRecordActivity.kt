@@ -1,20 +1,27 @@
-package com.example.testgolf1;
-/*
+package com.example.testgolf1
+
+import android.content.Intent
 import android.content.pm.PackageManager
-import android.media.MediaRecorder
-import android.os.Bundle
-import android.os.Environment
-import android.widget.Toast
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.speech.RecognitionListener
+import android.speech.RecognizerIntent
+import android.speech.SpeechRecognizer
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import kotlinx.android.synthetic.main.activity_main.*
-import java.io.IOException
+import android.Manifest
+import android.speech.tts.TextToSpeech
+import android.widget.Button
+import kotlinx.android.synthetic.main.activity_start_login_m.*
 import java.util.*
-*/
+import kotlin.collections.ArrayList
 
-public class VoiceRecordActivity {
-/* 
+class VoiceRecordActivity : AppCompatActivity()
+{
+
+/*
 기능실현 : STT 시
 출처 : https://m.blog.naver.com/PostView.naver?blogId=cosmosjs&logNo=221794583225&navType=by
 class MainActivity : AppCompatActivity() {
@@ -80,6 +87,4 @@ class MainActivity : AppCompatActivity() {
     }
 }
  */
-
-
 }

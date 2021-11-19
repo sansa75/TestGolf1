@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.collections.ArrayList
 
+
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     //STT 변수
     private lateinit var speechRecognizer: SpeechRecognizer
@@ -53,7 +54,11 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         //강민석 . 로그인 버튼 클릭 리스너 -> 로그인 화면 전환
         myInfoButton.setOnClickListener {
-            setContentView(R.layout.activity_start_login_m)
+
+            //setContentView(R.layout.activity_start_login_m)
+            //2021.11.22 intent로 화면전환
+            val intentLogin = Intent(this, LoginActivity::class.java)
+            startActivity(  intentLogin)
         }
     }
 
