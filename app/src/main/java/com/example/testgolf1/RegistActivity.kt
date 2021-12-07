@@ -1,40 +1,36 @@
 package com.example.testgolf1
 
-import android.content.pm.PackageManager
-import android.media.MediaRecorder
+import android.app.AlertDialog
+import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
+
 import android.os.Bundle
-import android.os.Environment
+
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_start_login_m.*
-import java.io.IOException
-import java.util.*
-
-class RegistActivity {
-
-
-    /*
-    public class LoginActivity {
+import kotlinx.android.synthetic.main.activity_start_login_s_regist.*
+import kotlinx.android.synthetic.main.activity_start_login_s_regist.edittext_id2
+import kotlinx.android.synthetic.main.activity_start_login_s_regist.edittext_password2
 
 
-        class Register : AppCompatActivity() {
-
+public class RegistActivity : AppCompatActivity() {
             val TAG: String = "Register"
             var isExistBlank = false
             var isPWSame = false
 
             override fun onCreate(savedInstanceState: Bundle?) {
                 super.onCreate(savedInstanceState)
-                setContentView(R.layout.activity_register)
+                setContentView(R.layout.activity_start_login_s_regist)
 
-                btn_register2.setOnClickListener {
+                registctivity_button_signup2.setOnClickListener {
                     Log.d(TAG, "회원가입 버튼 클릭")
 
-                    val id = edit_id.text.toString()
-                    val pw = edit_pw.text.toString()
-                    val pw_re = edit_pw_re.text.toString()
+                    var id = edittext_id2.text.toString()
+                    var pw = edittext_password2.text.toString()
+                    val pw_re = edittext_password3.text.toString()
 
                     // 유저가 항목을 다 채우지 않았을 경우
                     if(id.isEmpty() || pw.isEmpty() || pw_re.isEmpty()){
@@ -107,8 +103,6 @@ class RegistActivity {
 
 
 
-
-            */
 
 
 }

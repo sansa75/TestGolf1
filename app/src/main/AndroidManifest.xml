@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestGolf1" >
 
+        <activity android:name=".introActivity"/>
         <activity android:name=".LoginActivity"/>
+        <activity android:name=".RythmActivity"/>
+        <activity android:name=".RegistActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true" >

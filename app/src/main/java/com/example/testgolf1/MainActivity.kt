@@ -1,23 +1,24 @@
 package com.example.testgolf1
 
+import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.RecognitionListener
 import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
+import android.speech.tts.TextToSpeech
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import android.Manifest
-import android.speech.tts.TextToSpeech
-import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
-import kotlin.collections.ArrayList
 
+//2021.12.08 강민석* 으으 하기 싫어. 의지가 바닥이 난 상황
+//준병이는 바빠서 아예 안쳐다 보고 있고
+// 나라도 마무리 해서 끝내야지. 의지가 약하니 개발자되기는 힘들구나
 
 class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     //STT 변수
@@ -54,9 +55,20 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         //강민석 . 로그인 버튼 클릭 리스너 -> 로그인 화면 전환
         myInfoButton.setOnClickListener {
+            //초기 카운트 변수 선언
+            var int_count = 1
+            var int_last = 5
+            //2021.11.24 로그인 화면 지연을 어떻게 할까>???
+            //intro 화면
+            Toast.makeText(applicationContext,"intro 시작합니다.",Toast.LENGTH_SHORT).show()
+            val intentIntro = Intent(this, introActivity::class.java)
+            startActivity(  intentIntro)
 
+
+            //로그인 화면 (intro 5초뒤 전환)
             //setContentView(R.layout.activity_start_login_m)
             //2021.11.22 intent로 화면전환
+            Toast.makeText(applicationContext,"login 시작합니다.",Toast.LENGTH_SHORT).show()
             val intentLogin = Intent(this, LoginActivity::class.java)
             startActivity(  intentLogin)
         }

@@ -20,4 +20,7 @@
     <string name="title_community">커뮤</string>
     <string name="title_my">My</string>
 
+
+    <string name="firebase_web_client_id">434087136742-5va0sucvaeg1atcncktpe73qj4l3ocmr.apps.googleusercontent.com</string>
+
 </resources>
